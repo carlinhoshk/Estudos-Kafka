@@ -9,6 +9,6 @@ public class KafkaListeners {
     @KafkaListener(topics = "teste-topic", groupId = "testeGroup")
     public void listener(String data){
         System.out.println("--------------------------------------------------------------");
-        System.out.println(String.format("{Consumer} - Menssagem recebida: %s \n", data));
+        System.out.println(String.format("{Consumer} - Messenger receiver: %s \n", data));
     }
 }
